@@ -45,6 +45,18 @@ body {
   background-color: var(--primary-white-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* ============= COMPONENTS ============= */
 .logo-link {
   font-family: var(--secondary-font);
@@ -59,13 +71,19 @@ body {
 }
 
 .modal-btn {
-  font-family: inherit;
+  display: block;
+
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px 32px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border: 1px solid transparent;
   cursor: pointer;
 }
 
@@ -76,11 +94,42 @@ body {
 /* ============= END OF COMPONENTS ============= */
 
 /* ============= HEADER ============= */
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
 .header-logo-decor {
   color: var(--primary-black-color);
 }
 
+.menu {
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu-link {
+  display: block;
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -93,7 +142,19 @@ body {
   color: var(--accent-color);
 }
 
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts-link {
+  display: block;
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -109,13 +170,21 @@ body {
 
 /* ============= HERO ============= */
 .hero {
+  padding: 200px 0;
+
   background-color: #2f303a;
 }
 
 .hero-title {
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -158,7 +227,6 @@ body {
 
 /* ============= WORKS ============= */
 .works-filter-btn {
-  font-family: inherit;
   letter-spacing: inherit;
   font-weight: 500;
   font-size: 16px;
