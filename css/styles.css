@@ -86,7 +86,7 @@ body {
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  border: 1 solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -308,6 +308,7 @@ body {
 .works-filter-btn-list {
   display: flex;
   justify-content: center;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
