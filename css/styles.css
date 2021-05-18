@@ -42,6 +42,7 @@ img {
 }
 
 body {
+  min-width: 1200px;
   font-family: var(--main-font);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
